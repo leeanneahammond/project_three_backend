@@ -3,6 +3,9 @@
 ## Deployed on:
 Heroku
 
+## Technologies used:
+HTML, CSS, React
+
 ## Approach taken:
 
 ### Who would use it:

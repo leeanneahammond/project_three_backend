@@ -22,3 +22,7 @@ npm i
 ### Trello:
 
 ### Wireframe: 
+
+![Landing Page](/wireframe/landing.png)
+![Show Page](/wireframe/show.png)
+![Modals Page](/wireframe/modals.png)

@@ -9,10 +9,10 @@ HTML, CSS, React
 ## Approach taken:
 
 ### Who would use it:
-People wanting updates on COVID-19 statistics in their state. The user will be able to see help requests from individuals in need of assistance.
+Anyone interested in helping people get assistance and see COVID-19 statistics.
 
 ### Purpose:
-App that allows people in need get assistance and show COVID-19 stats.
+Americans are suffering from coronavirus and the quarantine process. Some people may have been laid off and just need alittle help to get by. This app will allow people in need get assistance and show COVID-19 statistics based on their state. Users will also be able to send help to individuals in need. 
 
 ### Problem:
 

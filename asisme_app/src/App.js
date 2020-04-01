@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
+
+// import API
+import States from "./components/States"
 
 
 function Index(props) {
@@ -27,6 +29,8 @@ class App extends React.Component {
 
   render(){
     return (
+
+
       <BrowserRouter>
         <div className="App">
           <nav>
@@ -57,7 +61,12 @@ class App extends React.Component {
               Learn React
             </a>
           </header>
+          <div className="container">
+            <States/>
+          </div>
         </div>
+
+        
       </BrowserRouter>
     )
   }

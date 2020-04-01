@@ -13,4 +13,4 @@ class States extends React.Component {
 }
 
 
-export default App;
+export default States;

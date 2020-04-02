@@ -23,7 +23,7 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <div>
                 <nav className="NavBar">
                     <ul>
                         <li>
@@ -38,7 +38,7 @@ class NavBar extends React.Component {
                     <Route path="/" exact component={States} />
                     <Route path="/aboutus/" exact component={About} />
                 </div>
-            </BrowserRouter>
+            </div>
         )
     }
 }

@@ -1,10 +1,32 @@
 import React from "react"
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
 
+function Index(props) {
+    return <h2>Hello, {props.username}</h2>;
+  }
+  
+  function About() {
+    return (
+      <>
+        <h2>About</h2>
+        <p>
+          ljksflkf skjlafsdkjlfasdjklfas djklfads kjlfadskjfads jkllafksjdklfj
+          adslkjfads{" "}
+        </p>
+      </>
+    );
+  }
 
 class States extends React.Component {
+
+
+
+
+
+
     render() {
         return(
+    <div className="container">
         <div className="states">
             <nav>
                 <ul>
@@ -13,13 +35,13 @@ class States extends React.Component {
                 </ul>
             </nav>
 
+        
             <footer className="footer">
                 <ul>
                     <span>NorthEast</span>
                     <li>Maine</li>
                     <li>New Hampshire</li>
                     <li>Vermont</li>
-                    <li>Massachusetts</li>
                     <li>Massachusetts</li>
                     <li>Rhode Island</li>
                     <li>Connecticut</li>
@@ -79,7 +101,7 @@ class States extends React.Component {
                     <li>Louisiana</li>
                 </ul>
             </footer>
-
+        </div>
             <div>
                 <Route path="/" exact component={Index} />
                 <Route path="/aboutus/" exact component={About} />

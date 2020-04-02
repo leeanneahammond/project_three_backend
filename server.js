@@ -17,7 +17,7 @@ app.use('/state, stateRoutes')
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/state', { useNewUrlParser: true });
-mongoose.connect('mongodb://127.0.0.1:27017/todos', { useNewUrlParser: true });
+mongoose.connect('mongodb://127.0.0.1:27017/states', { useNewUrlParser: true });
 
 >>>>>>> 254eb386295fedd067460fb9fb4fe7551dccad0f
 const connection = mongoose.connection;
@@ -35,7 +35,6 @@ app.get('/', function (req, res) {
   });
 
 
-<<<<<<< HEAD
 
 
 // POST route
@@ -47,13 +46,3 @@ app.post('/', function (req, res) {
 app.listen(PORT, function() {
     console.log("Server is running on Port: " + PORT);
 });
-=======
-app.listen(PORT, function() {
-    console.log("Server is running on Port: " + PORT);
-});
-
-
-
-});
-
->>>>>>> 254eb386295fedd067460fb9fb4fe7551dccad0f

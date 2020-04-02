@@ -1,5 +1,8 @@
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 254eb386295fedd067460fb9fb4fe7551dccad0f
 # project_three_backend
 
 User will be able to see statistics for COVID-19 by clicking on their state. They can ask/send assistance from display page. 

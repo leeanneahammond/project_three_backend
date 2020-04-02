@@ -3,9 +3,11 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const state = express.Router();
 const PORT = 4000;
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/state, stateRoutes')
 mongoose.connect('mongodb://127.0.0.1:27017/todos', { useNewUrlParser: true });
 const connection = mongoose.connection;
 connection.once('open', function() {

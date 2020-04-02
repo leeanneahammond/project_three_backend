@@ -19,9 +19,6 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <NavBar />
-          <div className="container">
-            <States/>
-          </div>
         </div>
       </BrowserRouter>
     )

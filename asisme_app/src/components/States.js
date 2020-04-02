@@ -1,6 +1,21 @@
 import React from "react"
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
 
+function Index(props) {
+    return <h2>Hello, {props.username}</h2>;
+  }
+  
+  function About() {
+    return (
+      <>
+        <h2>About</h2>
+        <p>
+          ljksflkf skjlafsdkjlfasdjklfas djklfads kjlfadskjfads jkllafksjdklfj
+          adslkjfads{" "}
+        </p>
+      </>
+    );
+  }
 
 class States extends React.Component {
     render() {

@@ -1,9 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
+import States from './States'
 
-function Index(props) {
-    return <h2>Hello, {props.username}</h2>;
-  }
   
   function About() {
     return (
@@ -26,10 +24,10 @@ class NavBar extends React.Component {
     render() {
         return (
             <BrowserRouter>
-                <nav>
+                <nav className="NavBar">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <span className="Logo"><Link to="/">ASIS-ME</Link></span><br />
                         </li>
                         <li>
                         <Link to="/aboutus/">About</Link>
@@ -37,7 +35,7 @@ class NavBar extends React.Component {
                     </ul>
                 </nav>
                 <div>
-                    <Route path="/" exact component={Index} />
+                    <Route path="/" exact component={States} />
                     <Route path="/aboutus/" exact component={About} />
                 </div>
             </BrowserRouter>

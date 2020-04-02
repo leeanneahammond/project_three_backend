@@ -18,8 +18,15 @@ function Index(props) {
   }
 
 class States extends React.Component {
+
+
+
+
+
+
     render() {
         return(
+    <div className="container">
         <div className="states">
             <nav>
                 <ul>
@@ -28,13 +35,13 @@ class States extends React.Component {
                 </ul>
             </nav>
 
+        
             <footer className="footer">
                 <ul>
                     <span>NorthEast</span>
                     <li>Maine</li>
                     <li>New Hampshire</li>
                     <li>Vermont</li>
-                    <li>Massachusetts</li>
                     <li>Massachusetts</li>
                     <li>Rhode Island</li>
                     <li>Connecticut</li>
@@ -94,7 +101,7 @@ class States extends React.Component {
                     <li>Louisiana</li>
                 </ul>
             </footer>
-
+        </div>
             <div>
                 <Route path="/" exact component={Index} />
                 <Route path="/aboutus/" exact component={About} />

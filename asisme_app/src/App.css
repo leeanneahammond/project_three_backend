@@ -64,6 +64,10 @@
   text-decoration: none;
 }
 
+.container {
+  margin-top: 6em;
+}
+
 .Logo {
   font-size: 3em;
 }

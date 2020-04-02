@@ -35,7 +35,6 @@ class NavBar extends React.Component {
                     </ul>
                 </nav>
                 <div>
-                    <Route path="/" exact component={States} />
                     <Route path="/aboutus/" exact component={About} />
                 </div>
             </div>

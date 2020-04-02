@@ -1,0 +1,27 @@
+{
+  "name": "project_three_backend",
+  "version": "1.0.0",
+  "description": "User will be able to see statistics for COVID-19 by clicking on their state. They can ask/send assistance from display page.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeanneahammond/project_three_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeanneahammond/project_three_backend/issues"
+  },
+  "homepage": "https://github.com/leeanneahammond/project_three_backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.7"
+  }
+}

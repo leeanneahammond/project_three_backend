@@ -2,12 +2,12 @@ const mongoose = require('mongoose');
 
 
 const requestSchema = new mongoose.Schema({
-        name: {type: String, required: true },
-        email: {type: String, required: true },
-        state: {type: String, required: true },
-        city: {type: String, required: true },
+        name: String,
+        email: String,
+        state: String,
+        city: String,
         severity: String,
-        request: {type: String, required: true },
+        request: String,
         support: Number,
 })
 

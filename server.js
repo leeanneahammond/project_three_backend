@@ -4,8 +4,12 @@ const app = express();
 const mongoose = require('mongoose');
 const PORT = process.env.PORT || process.env.LOCALPORT;
 const cors = require('cors');
+// var bodyParser = require('body-parser');
+
 // const usersController = require("./controllers/users.js");
 
+
+const requestsController = require("./controllers/requests.js");
 //MONGO/MONGOOSE CONNECTION
 //...farther down the page
 // Error / Disconnection
@@ -21,6 +25,9 @@ mongoose.connection.once('open', ()=>{
 });
 
 
+// middleware
+app.use(express.json());
+// app.use(bodyParser.json());
 const whitelist = ['http://localhost:3000', 'https://fathomless-sierra-68956.herokuapp.com']
 const corsOptions = {
   origin: function (origin, callback) {
@@ -32,18 +39,17 @@ const corsOptions = {
   }
 }
 
-
-// middleware
-app.use(express.json());
 app.use(cors());
 // app.use("/users", usersController);
+app.use("/requests", requestsController);
 
 
 
 
 
 
-app.listen(PORT, function() {
+
+app.listen(PORT, () => {
     console.log("Server is running on Port: " + PORT);
 });
 

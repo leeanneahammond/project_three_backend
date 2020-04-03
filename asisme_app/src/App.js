@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar'
-import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // import API
 import States from "./components/States"
-
-
+import State from "./components/State"
+import Map from "./components/Map"
 
 
 class App extends React.Component {
@@ -17,12 +17,13 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          <NavBar />
-          <div className="container">
-            <Route path="/" exact component={States} />
+          <div className="App">
+            <NavBar />
+            <div className="container">
+              <Route path="/" exact component={States} />
+              <Route path="/state/:id" component={State}/>
+            </div>
           </div>
-        </div>
       </BrowserRouter>
     )
   }

@@ -19,6 +19,11 @@ fetch(baseURL + "/requests")
         .then(parsedData => console.log(parsedData),
             err => console.log(err))
 
+
+
+
+
+
 class State extends React.Component {
     state = {
         activeState: [],
@@ -45,8 +50,8 @@ class State extends React.Component {
 
 
      //show
-  getRequest = request => {
-    this.setState({request})
+  getRequest = requests => {
+    this.setState({requests})
   }
 
 
@@ -81,6 +86,7 @@ componentDidMount () {
   }
 
     render(){
+        console.log(this.requests)
         console.log(this.state)
         console.log(this.props)
         return(
@@ -99,6 +105,21 @@ componentDidMount () {
                         <p>Total Tested Results: <strong> {this.state.activeState.totalTestResults} </strong></p>   
                     </div> : <h2>Gathering Information...</h2>}
                 </div>
+
+                {/* <div className="main-request">
+                    {this.state.requests.map(requests => (
+                        <ul key={requests._id}>
+                            <div className="request" key={requests._id}>
+                               <p>{requests.name} <strong> {requests.email} </strong> <strong>{requests.SupportNumber}</strong></p> 
+                               <p>{requests.city} <strong> {requests.severity} </strong></p> 
+                               <p>{requests.request}</p>
+                            </div>
+                        </ul>
+                    ))}  
+                </div> */}
+
+                
+
             </div>
         )
     }

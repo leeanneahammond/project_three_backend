@@ -79,7 +79,7 @@ app.get("/seed", (req, res) => {
     {
       name:"Nancy",
       email:"test@gmail.com",
-      state:"Texas",
+      state:"TX",
       city:"Dallas",
       severity:"Medium",
       request:"Please Help!!",

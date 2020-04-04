@@ -26,14 +26,14 @@ fetch(baseURL + "/requests")
 
 class State extends React.Component {
     state = {
-        activeState: [],
+        activeState: "",
         isLoading: true,
         error: null,
         requests: [],
         request: null
     }
 
-
+//lifecycle method
     componentDidMount = () => {
         console.log(this.props.location.state.info)
         const hash = this.props.location.state.info
@@ -46,6 +46,8 @@ class State extends React.Component {
                 })
             })
             .catch(error => this.setState({error, isLoading: false}))
+            
+            this.getRequest();
     }
 
 
@@ -80,15 +82,11 @@ class State extends React.Component {
         })
       }
 
-//lifecycle method
-componentDidMount () {
-    this.getRequest()
-  }
 
     render(){
-        console.log(this.requests)
-        console.log(this.state)
-        console.log(this.props)
+        console.log("requests", this.requests)
+        console.log("state", this.state)
+        console.log("props", this.props)
         return(
             <div>
                 <Form
@@ -106,17 +104,19 @@ componentDidMount () {
                     </div> : <h2>Gathering Information...</h2>}
                 </div>
 
-                {/* <div className="main-request">
+                <div className="main-request">
+                <ul>
                     {this.state.requests.map(requests => (
-                        <ul key={requests._id}>
+                        requests.state === this.state.activeState.state ?
                             <div className="request" key={requests._id}>
                                <p>{requests.name} <strong> {requests.email} </strong> <strong>{requests.SupportNumber}</strong></p> 
                                <p>{requests.city} <strong> {requests.severity} </strong></p> 
                                <p>{requests.request}</p>
                             </div>
-                        </ul>
-                    ))}  
-                </div> */}
+                            : null
+                    ))} 
+                    </ul> 
+                </div>
 
                 
 

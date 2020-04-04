@@ -99,8 +99,8 @@ class Form extends React.Component {
             <label htmlFor="State"></label>
                 <select placeholder="State" id="state" name="state" onChange={this.handleChange} value={this.state.state} >
                     <option value="">State</option>
-                    {this.state.info.map(info => (
-                        <option value={info.states}>{info.states}</option>
+                    {this.state.info.map((info, index) => (
+                        <option key={index} value={info.states}>{info.states}</option>
                     ))}
                 </select> 
 

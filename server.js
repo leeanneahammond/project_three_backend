@@ -1,48 +1,99 @@
-const express = require('express');
+require("dotenv").config();
+const express = require("express");
 const app = express();
-const bodyParser = require('body-parser');
-const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 4000;
-<<<<<<< HEAD
-app.use(cors());
-app.use(bodyParser.json());
-mongoose.connect('mongodb://127.0.0.1:27017/todos', { useNewUrlParser: true });
-=======
+const PORT = process.env.PORT || process.env.LOCALPORT;
+const cors = require('cors');
+const Request = require("./models/request.js")
+// var bodyParser = require('body-parser');
 
-// middleware
-app.use(cors());
-app.use(bodyParser.json());
-app.use('/state, stateRoutes')
+// const usersController = require("./controllers/users.js");
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/state', { useNewUrlParser: true });
-mongoose.connect('mongodb://127.0.0.1:27017/states', { useNewUrlParser: true });
+const requestsController = require("./controllers/requests.js");
+//MONGO/MONGOOSE CONNECTION
+//...farther down the page
+// Error / Disconnection
+mongoose.connection.on('error', err => console.log(err.message + ' is Mongod not running?'))
 
->>>>>>> 254eb386295fedd067460fb9fb4fe7551dccad0f
-const connection = mongoose.connection;
-connection.once('open', function() {
-    console.log("MongoDB database connection established successfully");
+mongoose.connection.on('disconnected', () => console.log('mongo disconnected'))
+
+//...farther down the page
+mongoose.connect('mongodb://localhost:27017/requests', { useNewUrlParser: true, useUnifiedTopology: true })
+
+mongoose.connection.once('open', ()=>{
+    console.log('connected to mongoose...')
 });
 
-app.get('/', function (req, res) {
-    res.send('hello world')
-  });
 
-// GET route
-app.get('/', function (req, res) {
-    res.send('GET request to the homepage')
-  });
+// middleware
+app.use(express.json());
+// app.use(bodyParser.json());
+const whitelist = ['http://localhost:3000', 'https://fathomless-sierra-68956.herokuapp.com']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (whitelist.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+app.use(cors());
+// app.use("/users", usersController);
+app.use("/requests", requestsController);
 
 
 
 
-// POST route
-app.post('/', function (req, res) {
-    res.send('POST request to the homepage')
-  })
+app.get("/seed", (req, res) => {
+  Request.create([
+    {
+      name:"Chris",
+      email:"test@gmail.com",
+      state:"New York",
+      city:"New York",
+      severity:"High",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"Phi",
+      email:"test@gmail.com",
+      state:"Rhode Island",
+      city:"Providence",
+      severity:"Low",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"Leeanne",
+      email:"test@gmail.com",
+      state:"District of Columbia",
+      city:"Washington D.C.",
+      severity:"Low",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"Nancy",
+      email:"test@gmail.com",
+      state:"Texas",
+      city:"Dallas",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+  ], (error, createdRequest) => {
+    if (error) {
+        res.status(400).json({ error: error.message })
+      }
+      res.redirect("/requests") //  .json() will send proper headers in response so client knows it's json coming back
+})
+})
 
 
-app.listen(PORT, function() {
+app.listen(PORT, () => {
     console.log("Server is running on Port: " + PORT);
 });

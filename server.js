@@ -52,8 +52,8 @@ app.get("/seed", (req, res) => {
     {
       name:"Chris",
       email:"test@gmail.com",
-      state:"New York",
-      city:"New York",
+      state:"NY",
+      city:"NY",
       severity:"High",
       request:"Please Help!!",
       support: 1
@@ -61,7 +61,7 @@ app.get("/seed", (req, res) => {
     {
       name:"Phi",
       email:"test@gmail.com",
-      state:"Rhode Island",
+      state:"RI",
       city:"Providence",
       severity:"Low",
       request:"Please Help!!",
@@ -70,7 +70,7 @@ app.get("/seed", (req, res) => {
     {
       name:"Leeanne",
       email:"test@gmail.com",
-      state:"District of Columbia",
+      state:"DC",
       city:"Washington D.C.",
       severity:"Low",
       request:"Please Help!!",
@@ -81,6 +81,466 @@ app.get("/seed", (req, res) => {
       email:"test@gmail.com",
       state:"Texas",
       city:"Dallas",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"VI",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MP",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"GU",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"AS",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"PR",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"WY",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"WV",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"WI",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    }, {
+      name:"test",
+      email:"test@gmail.com",
+      state:"WA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"VT",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"VA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"UT",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"TN",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"SD",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"SC",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"PA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"OR",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"OK",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"OH",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NV",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NM",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NJ",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NH",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NE",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"ND",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"NC",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MT",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MS",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MO",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MN",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MI",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"ME",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MD",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"MA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"LA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"KY",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"KS",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"IN",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"IL",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"ID",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"IA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"HI",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"GA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"FL",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"DE",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"CT",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"CO",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"CA",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"AZ",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"AR",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"AL",
+      city:"test",
+      severity:"Medium",
+      request:"Please Help!!",
+      support: 1
+    },
+    {
+      name:"test",
+      email:"test@gmail.com",
+      state:"AK",
+      city:"test",
       severity:"Medium",
       request:"Please Help!!",
       support: 1
@@ -97,5 +557,3 @@ app.get("/seed", (req, res) => {
 app.listen(PORT, () => {
     console.log("Server is running on Port: " + PORT);
 });
-
-

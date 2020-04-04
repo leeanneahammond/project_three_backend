@@ -79,7 +79,7 @@ app.get("/seed", (req, res) => {
     {
       name:"Nancy",
       email:"test@gmail.com",
-      state:"Texas",
+      state:"TX",
       city:"Dallas",
       severity:"Medium",
       request:"Please Help!!",
@@ -555,5 +555,5 @@ app.get("/seed", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log("Server is running on Port: " + PORT);
+    console.log("Server is running on Port: " + 3000);
 });

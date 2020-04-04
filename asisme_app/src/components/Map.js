@@ -34,9 +34,6 @@ class Map extends React.Component {
 
   /* optional customization of filling per state and calling custom callbacks per state */
   statesCustomConfig = () => {
-      const red = "red"
-      const orange = "orange"
-      const yellow = "yellow"
     return {
       "NJ": {
         fill: "orange",

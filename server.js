@@ -92,8 +92,18 @@ app.get("/seed", (req, res) => {
       res.redirect("/requests") //  .json() will send proper headers in response so client knows it's json coming back
 })
 })
+<<<<<<< HEAD
 
 
 app.listen(PORT, () => {
     console.log("Server is running on Port: " + PORT);
 });
+=======
+
+
+app.listen(PORT, () => {
+    console.log("Server is running on Port: " + PORT);
+});
+
+
+>>>>>>> 759d5a0f48e2564a9bc56353e543d4be21176296

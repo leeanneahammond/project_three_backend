@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 
 const StateList = props => (
-    <div>
+    <>
+     <ul >
         {props.info.map(info => (
-            <ul key={info.states}>
-                <li>
+                <li key={info.states}>
                     <Link to={{pathname: `/state/${info.hash}`, state: {info: info.hash}}}>{info.states}</Link>
                 </li> 
-            </ul>
-        ))}   
-    </div>
+            ))}  
+        </ul> 
+    </>
 )
 
 

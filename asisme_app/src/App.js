@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar'
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 // import API
 import States from "./components/States"
 import State from "./components/State"
-import Map from "./components/Map"
+
+
+
 
 
 class App extends React.Component {
   state = {
-
   }
+
 
   render() {
     return (

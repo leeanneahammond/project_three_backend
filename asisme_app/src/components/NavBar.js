@@ -1,6 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Link, Redirect } from "react-router-dom";
-import States from './States'
+import { Route, Link } from "react-router-dom";
 
   
   function About() {

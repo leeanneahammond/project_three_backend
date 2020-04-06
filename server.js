@@ -555,5 +555,5 @@ app.get("/seed", (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log("Server is running on Port: " + 3000);
+    console.log("Server is running on Port: " + PORT);
 });

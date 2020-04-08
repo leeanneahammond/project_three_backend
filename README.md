@@ -11,7 +11,7 @@ We would wanted to be able to help others gather information and be able to requ
 ## Code style
 A working full-stack application, built by us, using the MERN stack: **Mongoose, Express, React, and Node.js, full CRUD and RESTful**.
 
-## Link to Front-End
+## Link to Site
 https://github.com/phuynh7577/asis-me
 
 ## Deployed on:
@@ -28,12 +28,10 @@ https://trello.com/b/SS0ZiVXG/project-3-mern-stack-assisme
 - [Express](https://expressjs.com/)
 - [React](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
-- [RESTful](https://restfulapi.net/)
-
 
 
 ## Features
-Bringing in different components and wiring them together to get them to work with each other. 
+RESTful API with full CRUD capabilities.
 
 
 ## Installation
@@ -48,10 +46,5 @@ We used [COVID Tracking](https://covidtracking.com/api/states)
 - Chris Murphy -- Product Manager </br>
 - Leeanne Hammond --> Release Manager </br>
 - Nancy --> Back End Manager </br>
-
-## Screenshots
-![Clickable States](public/asismeSS3.png)
-![Clickable States](public/asismeSS2.png)
-![Input Form](public/asismeSS1.png)
 
 
